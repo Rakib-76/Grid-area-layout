@@ -41,3 +41,9 @@
         "footer footer    footer  footer"
     ;
 }
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
