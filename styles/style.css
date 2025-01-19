@@ -5,8 +5,11 @@
     border: 2px solid tomato;
     border-radius: 2px;
 
-
 }
+
+
+
+
 
 /* part by part kore egulok na recognize korlae pc egulo k chinbe na a r se onujai layout o dibe na  */
 
@@ -40,10 +43,22 @@
         "navbar main     main   advertise"
         "footer footer    footer  footer"
     ;
+
 }
 
 .sidebar{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+@media screen and (max-width: 420px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .header, .navbar, .main, .footer, .asidebar, .advertise{
+        width: 100%;
+    }
 }
