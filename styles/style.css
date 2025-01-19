@@ -1,0 +1,43 @@
+
+
+.header, .navbar, .main, .footer, .asidebar, .advertise{
+    background-color: bisque;
+    border: 2px solid tomato;
+    border-radius: 2px;
+
+
+}
+
+/* part by part kore egulok na recognize korlae pc egulo k chinbe na a r se onujai layout o dibe na  */
+
+.header{
+    grid-area: header;
+}
+.navbar{
+    grid-area: navbar;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+.asidebar{
+    grid-area: asidebar;
+}
+.advertise{
+    grid-area: advertise;
+}
+
+/* body er moddhe ja kora hoiche eitai muloto layout ekhane jevabe command dibo thik ekoivane eigula layout dibe */
+
+.body{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        "header header header header"
+        "navbar main     main  asidebar"
+        "navbar main     main   advertise"
+        "footer footer    footer  footer"
+    ;
+}
